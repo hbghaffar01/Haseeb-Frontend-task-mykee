@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --text: #0a0a0a;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+  }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+address,
+area,
+pre,
+div {
+  color: var(--text);
+}
+
+.container {
+  max-width: 1248px;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
